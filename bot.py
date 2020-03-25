@@ -353,8 +353,7 @@ async def ball_error(ctx, error):
 
 # Token
 
-token = os.environ.get('BOT_TOKEN')
+#token = os.environ.get('BOT_TOKEN')
+token = open( 'token.txt', 'r' ).readline()
 
-#token = open( 'token.txt', 'r' ).readline()
-
-#client.run( token )
+client.run( token )
